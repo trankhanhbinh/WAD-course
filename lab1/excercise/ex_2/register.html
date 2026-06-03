@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration - Register</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Course Registration</h1>
+        <h2>Use the form below to register for your desired courses.</h2>
+    </header>
+
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Course Catalog</a></li>
+            <li><a href="register.html">Register for Courses</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <section>
+            <form method="GET" action="confirmation.html">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required><br><br>
+
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Selection</legend>
+                    <label for="courses">Select Courses:</label><br>
+                    <select id="courses" name="courses" multiple size="5">
+                        <option value="CSCI101">CSCI101 - Introduction to Computer Science</option>
+                        <option value="MATH201">MATH201 - Calculus I</option>
+                        <option value="HIST150">HIST150 - World History</option>
+                        <option value="PHYS101">PHYS101 - General Physics</option>
+                        <option value="ENG101">ENG101 - English Composition</option>
+                        <option value="CHEM101">CHEM101 - General Chemistry</option>
+                        <option value="PSY101">PSY101 - Introduction to Psychology</option>
+                        <option value="ART101">ART101 - Art Appreciation</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <p>Semester:</p>
+                    <input type="radio" id="fall2025" name="semester" value="Fall 2025">
+                    <label for="fall2025">Fall 2025</label><br>
+
+                    <input type="radio" id="spring2026" name="semester" value="Spring 2026">
+                    <label for="spring2026">Spring 2026</label><br>
+
+                    <input type="radio" id="summer2026" name="semester" value="Summer 2026">
+                    <label for="summer2026">Summer 2026</label><br><br>
+
+                    <label for="comments">Comments/Special Requests:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+                </fieldset>
+
+                <input type="submit" value="Submit Registration">
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 Course Registration System</p>
+    </footer>
+
+</body>
+</html>
