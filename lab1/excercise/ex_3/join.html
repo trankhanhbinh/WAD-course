@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - University Research Lab</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>University Research Lab</h1>
+    </header>
+
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="join.html">Join Us (current page)</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <section>
+            <h2>Join Our Research Lab</h2>
+            <p>We are always looking for talented individuals to join our research team. Whether you're a PhD student, postdoc, research assistant, or intern, we offer exciting opportunities to contribute to cutting-edge research in computer science and engineering.</p>
+        </section>
+
+        <section>
+            <h2>Application Form</h2>
+            <form method="GET">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="^\S.*$" title="Cannot start with a space"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9\-\s]+" title="Numbers, spaces and dashes only"><br><br>
+
+                <label for="position">Position:</label>
+                <select id="position" name="position">
+                    <option value="">Select Position</option>
+                    <option value="phd_student">PhD Student</option>
+                    <option value="postdoc">Postdoc</option>
+                    <option value="research_assistant">Research Assistant</option>
+                    <option value="intern">Intern</option>
+                </select><br><br>
+
+                <label for="research_interests">Research Interests:</label><br>
+                <textarea id="research_interests" name="research_interests"></textarea><br><br>
+
+                <label for="resume">Resume (file upload): </label>
+                <input type="file" id="resume" name="resume"><br>
+                <small>Note: GET forms cannot actually upload files; this field is illustrative only.</small><br><br>
+
+                <fieldset>
+                    <legend>Availability:</legend>
+                    <input type="checkbox" id="immediately" name="availability[]" value="immediately">
+                    <label for="immediately">Immediately</label><br>
+
+                    <input type="checkbox" id="summer_2026" name="availability[]" value="summer_2026">
+                    <label for="summer_2026">Summer 2026</label><br>
+
+                    <input type="checkbox" id="fall_2026" name="availability[]" value="fall_2026">
+                    <label for="fall_2026">Fall 2026</label><br>
+
+                    <input type="checkbox" id="spring_2027" name="availability[]" value="spring_2027">
+                    <label for="spring_2027">Spring 2027</label><br>
+                </fieldset>
+
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 University Research Lab</p>
+    </footer>
+</body>
+</html>
