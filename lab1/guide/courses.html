@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Course Catalog</title>
+</head>
+<body>
+    <header>
+        <h1>University Course Catalog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Courses</h2>
+
+        <section>
+            <h3>Search Courses</h3>
+            <form action="search-results.html" method="GET">
+                <div>
+                    <label for="keyword">Keyword:</label>
+                    <input type="text" id="keyword" name="keyword" placeholder="e.g., web">
+                </div>
+                
+                <div>
+                    <label for="level">Level:</label>
+                    <select id="level" name="level">
+                        <option value="">Any Level</option>
+                        <option value="300">300-level</option>
+                        <option value="400">400-level</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="credits">Minimum Credits:</label>
+                    <input type="number" id="credits" name="credits" min="1" max="4" value="3">
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <article id="cs301">
+            <h3>CS301 - Web Application Development</h3>
+            <p><strong>Instructor:</strong> Dr. Smith</p>
+            <p><strong>Schedule:</strong> Mon/Wed 10:00-11:30</p>
+            <p><strong>Prerequisites:</strong> CS201 (Data Structures)</p>
+            <p>Comprehensive introduction to building modern web applications...</p>
+        </article>
+
+        <article id="cs302">
+            <h3>CS302 - Database Systems</h3>
+            <p><strong>Instructor:</strong> Prof. Johnson</p>
+            <p><strong>Schedule:</strong> Tue/Thu 14:00-15:30</p>
+            <p><strong>Prerequisites:</strong> CS201 (Data Structures)</p>
+            <p>Design and implementation of database systems...</p>
+        </article>
+
+        <article id="cs401">
+            <h3>CS401 - Advanced Web Technologies</h3>
+            <p><strong>Instructor:</strong> Dr. Williams</p>
+            <p><strong>Schedule:</strong> Mon/Wed 14:00-15:30</p>
+            <p><strong>Prerequisites:</strong> CS301 (Web Application Development)</p>
+            <p>Advanced topics including real-time systems, microservices...</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
