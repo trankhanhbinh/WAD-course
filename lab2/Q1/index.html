@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout flex-box</title>
+    <style>
+        body {
+            background-color: rgb(255, 204, 115);
+        }
+        .main-container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: white;
+            border: orange 2px solid;
+        }
+        header{
+            padding: 10px;
+            border-bottom: rgb(255, 184, 61);
+            border-width: 2px;
+            border-style: solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            height: 50px;
+        }
+        footer{
+            padding: 10px;
+            border-top: rgb(255, 184, 61);
+            border-width: 2px;
+            border-style: solid;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            height: 50px;
+        }
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .content-container section {
+            background-color: none;
+            padding: 10px;
+        }
+        .sidebar-a, .sidebar-b {
+            width: 20%;
+        }
+        .sidebar-a {
+            border-right: 2px solid rgb(255, 184, 61);
+            height: 400px;
+        }
+        .sidebar-b {
+            border-left: 2px solid rgb(255, 184, 61);
+            height: 400px;
+        }
+        h1, h2 {
+            margin: 0px;
+            text-align: left;       
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <div class="content-container">
+            <section class="sidebar-a">
+                <h2>Sidebar A</h2>
+            </section>
+
+            <section class="main-content">
+                <h2>Main content</h2>
+            </section>
+
+            <section class="sidebar-b">
+                <h2>Sidebar B</h2>
+            </section>
+        </div>
+
+        <footer>
+            <h1>Footer</h1>
+        </footer>        
+    </div>
+
+</body>
+</html>
