@@ -1,0 +1,229 @@
+/* =========== DEFAULT =========== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: max-content;
+    border: 2px solid #a30000;
+    min-height: 100vh;
+}
+
+hr{
+    border: 1.5px solid #a30000;
+    margin: 15px 0;
+}
+/* =========== HEADER =========== */
+header{
+    background-color: #a30000;
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    padding:15px 50px;
+    background-image: linear-gradient(30deg,
+    #ffb357 20%, #fffdeb 40%, #ffffff 50%, #fffded 60%, #f6bb73 80%);
+}
+
+.logo-box img{
+    width:80px;
+}
+
+.page-title{
+    margin-left:15px;
+}
+
+.page-title h1{
+    color:#8b0000;
+    font-size:28px;
+}
+
+.tagline{
+    font-style:italic;
+    font-size:18px;
+    font-weight: 600;
+}
+
+.tagline b{
+    color: #ad0000;
+    text-shadow: 2px 2px rgb(64, 0, 0);
+    font-size: 20px;
+}
+
+/* NAVIGATION */
+
+.navigation{
+    background:#a30000;
+    padding: 0px 50px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    position:relative;
+    width: 200px;
+}
+
+nav ul li a{
+    display:block;
+    padding:15px 25px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+}
+
+/* hover menu */
+nav ul li a:hover{
+    background:#7a0000;
+}
+
+/* DROPDOWN */
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#a30000;
+    top:100%;
+    left:0;
+    min-width:220px;
+}
+
+.dropdown-content li{
+    width:100%;
+}
+
+.dropdown-content a{
+    padding:12px 20px;
+}
+
+/* hiện dropdown khi hover */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* active page */
+.current-navigation{
+    color:yellow;
+}
+
+/* =========== CONTENT =========== */
+.content {
+    display: flex;
+    background-color: #fffde8;
+    padding-top: 30px;
+    width: 100%;
+    /* the content area not take up extra space */
+    /* why? -  */
+    min-height: 100vh;
+}
+.title-black{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.title-red{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a30000;
+}
+/* SIDEBAR */
+.side-bar{
+    flex: 1;
+}
+
+.side-bar h3{
+    margin: 0 40px;
+    font-weight: 750;
+}
+
+/* list */
+.speaker-list{
+    list-style: none;
+    padding: 10px 10px 0px 40px;
+}
+
+.speaker-list-item{
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.speaker-list-item img{
+    width: 80px;
+    height: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+.speaker-list-item a{
+    color: blue;
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* MAIN CONTENT */
+.main-content{
+    flex: 5;
+    padding: 0 140px 0 50px;
+}
+
+/* list content */
+.main-content-a{
+    margin-bottom: 20px;
+    padding-right: 80px;
+}
+.main-content-a p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.main-content-a i{
+    font-size: 17px;
+    margin-left: 50px;
+}
+.main-content-b{
+    display: flex;
+}
+.main-content-b b{
+    font-size: 18px;
+}
+.main-content-b img{
+    width: 270px;
+    height: 250px;
+    margin-left: 40px;
+    margin-right: 100px;
+    border: 2px solid black;
+}
+.main-content-b a{
+    color: blue;
+    text-decoration: underline;
+    margin-right: 30px;
+}
+
+.main-content-b p{
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+.main-content-c li{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+/* =========== FOOTER =========== */
+footer{
+    background-color: #a30000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    font-weight: 600;
+}
