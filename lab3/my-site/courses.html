@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="site-main">
+    <h2>Available Courses</h2>
+
+    <div class="search-container">
+        <input 
+            type="text" 
+            id="course-search" 
+            class="form-input" 
+            placeholder="Search courses by code or title..."
+        >
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web</button>
+        <button class="filter-btn" data-category="database">Database</button>
+        <button class="filter-btn" data-category="systems">Systems</button>
+    </div>
+
+    <!-- Modal overlay -->
+    <div id="course-modal" class="modal" style="display: none;">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div id="modal-body">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="course-list" class="card-grid">
+            <!-- Courses will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="./js/courses.js"></script>
+</body>
+</html>
