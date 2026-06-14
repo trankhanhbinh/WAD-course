@@ -1,0 +1,6 @@
+# ignore the target directory
+target/
+# ignore the .idea directory (if using IntelliJ IDEA)
+.idea/
+# ignore the .vscode directory (if using Visual Studio Code)
+.vscode/
